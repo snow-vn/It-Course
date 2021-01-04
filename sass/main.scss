@@ -6,12 +6,13 @@
 @import './base/utilities';
 
 @import './components/buttons';
+@import './components/forms';
 @import './components/card';
 
 @import './layout/grid';
-@import './layout/navigation';
+@import './layout/header';
 @import './layout/sidebar';
 @import './layout/main';
 @import './layout/footer';
 
-@import './page/home.scss/';
+@import './page/home';

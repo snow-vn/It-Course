@@ -8,83 +8,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav class="main-nav">
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+            <!-- logo -->
+            <div class="logo">
+                <img src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
+                <p class="logo-text"><span>s</span>Now</p>
+            </div>
             
-                <!-- logo -->
-                <div class="logo">
-                    <img src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
-                    <p class="logo-text"><span>s</span>Now</p>
-                </div>
-               
-                <!-- navigation center -->
-                <nav class="main-nav__center">
-    
-                    <h3 class="title">Công Nghệ</h3>
-    
-                    <ul class="main-nav__list ml-6">
-    
-                        <li class="main-nav__item"> 
-                            <a href="#" class="btn border-none btn-active">Khóa học</a>
-                        </li>
-    
-                        <li class="main-nav__item"> 
-                            <a href="#" class="btn border-none">Blog</a>
-                        </li>
-    
-                        <li class="main-nav__item"> 
-                            <a href="#" class="btn border-none">Tài Liệu</a>
-                        </li>
-                    </ul>
-                </nav>
-    
-                <!-- navigation right -->
-                <div class="right-menu">
-                    <ul class="main-nav__list">
-    
-                        <li class="main_nav__item">
-                            <a href="#" class="main-nav__link">
-                                Tất cả sNow
-                                <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-    
-                        <!-- icon search -->
-                        <li class="main_nav__item" id="search-icon">
-                            <a href="#" class="main-nav__link btn-hover">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-    
-                        <!-- icon shopping cart -->
-                        <li class="main_nav__item">
-                            <a href="#" class="main-nav__link btn-hover">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-    
-                        <!-- icon user -->
-                        <li class="main_nav__item">
-                            <a href="#" class="main-nav__link btn-hover">
-                                <i class="fas fa-user-plus"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                    
-    
-               <!-- nav input search -->
-                <form class="form-search">
-                    <div class="form-group">
-                        <input type="text" placeholder="Tìm kiếm khóa học" class="form-control">
-                        <span class="btn border-none border-left btn-active"><i class="fas fa-search"></i></span>
-                    </div>
-                    <button id="cancel-search" class="btn btn-white ml-1">Hủy</button>
-                </form>
+            <!-- navigation center -->
+            <nav class="main-nav__center">
+
+                <h3 class="title">Công Nghệ</h3>
+
+                <ul class="main-nav__list ml-6">
+
+                    <li class="main-nav__item"> 
+                        <a href="#" class="btn border-none btn-active">Khóa học</a>
+                    </li>
+
+                    <li class="main-nav__item"> 
+                        <a href="#" class="btn border-none">Blog</a>
+                    </li>
+
+                    <li class="main-nav__item"> 
+                        <a href="#" class="btn border-none">Tài Liệu</a>
+                    </li>
+                </ul>
             </nav>
-        </header>
-    </div>
+
+            <!-- navigation right -->
+            <div class="right-menu">
+                <ul class="main-nav__list">
+
+                    <li class="main_nav__item">
+                        <a href="#" class="main-nav__link">
+                            Tất cả sNow
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <!-- icon search -->
+                    <li class="main_nav__item" id="search-icon">
+                        <a href="#" class="main-nav__link btn-hover">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+
+                    <!-- icon shopping cart -->
+                    <li class="main_nav__item">
+                        <a href="#" class="main-nav__link btn-hover">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+
+                    <!-- icon user -->
+                    <li class="main_nav__item">
+                        <a href="#" class="main-nav__link btn-hover">
+                            <i class="fas fa-user-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                
+
+            <!-- nav input search -->
+            <form class="form-search">
+                <div class="form-group">
+                    <input type="text" placeholder="Tìm kiếm khóa học" class="form-control">
+                    <span class="btn bg-dark-none border-left btn-active"><i class="fas fa-search"></i></span>
+                </div>
+                <button id="cancel-search" class="btn btn-white ml-1">Hủy</button>
+            </form>
+        </nav>
+      </div>
+    </header>
 
     <div class="container mt-6">
         <div class="grid grid-cols-12 gap-12">
@@ -212,7 +211,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                                 
@@ -253,7 +252,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                                 
@@ -294,7 +293,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                                 
@@ -335,7 +334,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                                 
@@ -376,7 +375,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                             </li>
@@ -416,7 +415,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">Miễn phí</span>
+                                        <span class="btn bg-dark">Miễn phí</span>
                                     </li>    
                                 </ul>
                             </li>
@@ -456,7 +455,7 @@
                                         <span>100</span>
                                     </li>
                                     <li class="price">
-                                        <span class="btn bg-blue">200.000</span>
+                                        <span class="btn bg-dark">200.000</span>
                                     </li>
                                 </ul>
                             </li>
