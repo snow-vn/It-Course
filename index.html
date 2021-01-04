@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sNow</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+            
+                <!-- logo -->
+                <div class="logo">
+                    <img src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
+                    <p class="logo-text"><span>s</span>Now</p>
+                </div>
+               
+                <!-- navigation center -->
+                <nav class="main-nav__center">
+    
+                    <h3 class="title">Công Nghệ</h3>
+    
+                    <ul class="main-nav__list ml-6">
+    
+                        <li class="main-nav__item"> 
+                            <a href="#" class="btn border-none btn-active">Khóa học</a>
+                        </li>
+    
+                        <li class="main-nav__item"> 
+                            <a href="#" class="btn border-none">Blog</a>
+                        </li>
+    
+                        <li class="main-nav__item"> 
+                            <a href="#" class="btn border-none">Tài Liệu</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- navigation right -->
+                <div class="right-menu">
+                    <ul class="main-nav__list">
+    
+                        <li class="main_nav__item">
+                            <a href="#" class="main-nav__link">
+                                Tất cả sNow
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+    
+                        <!-- icon search -->
+                        <li class="main_nav__item" id="search-icon">
+                            <a href="#" class="main-nav__link btn-hover">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+    
+                        <!-- icon shopping cart -->
+                        <li class="main_nav__item">
+                            <a href="#" class="main-nav__link btn-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+    
+                        <!-- icon user -->
+                        <li class="main_nav__item">
+                            <a href="#" class="main-nav__link btn-hover">
+                                <i class="fas fa-user-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    
+    
+               <!-- nav input search -->
+                <form class="form-search">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tìm kiếm khóa học" class="form-control">
+                        <span class="btn border-none border-left btn-active"><i class="fas fa-search"></i></span>
+                    </div>
+                    <button id="cancel-search" class="btn btn-white ml-1">Hủy</button>
+                </form>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container mt-6">
+        <div class="grid grid-cols-12 gap-12">
+            <!-- sidebar -->
+            <section class="sidebar col-span-4">
+                <div class="course-sidebar active">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">Font-End</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href="">HTML/CSS</a></li>
+                        <li class="list-group-item"><a href="">Javascript</a></li>
+                        <li class="list-group-item"><a href="">Reactjs</a></li>
+                        <li class="list-group-item"><a href="">Vuejs</a></li>
+                        <li class="list-group-item"><a href="">Angular</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">Back-End</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href="">Nodejs</a></li>
+                        <li class="list-group-item"><a href="">Java</a></li>
+                        <li class="list-group-item"><a href="">.Net</a></li>
+                        <li class="list-group-item"><a href="">Python</a></li>
+                        <li class="list-group-item"><a href="">Golang</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">App/Mobile</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href="">Swift</a></li>
+                        <li class="list-group-item"><a href="">Objective-C</a></li>
+                        <li class="list-group-item"><a href="">Java</a></li>
+                        <li class="list-group-item"><a href="">Kotlin</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">Cơ sở dữ liệu</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href="">Sql Server</a></li>
+                        <li class="list-group-item"><a href="">MongoDB</a></li>
+                        <li class="list-group-item"><a href="">Mysql</a></li>
+                        <li class="list-group-item"><a href="">Postgresql</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">DevOps</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar__heading border-bottom">
+                        <h6 class="heading mt-3 py-3">Bổ trợ</h6>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="list-group border-none pd-0">
+                        <li class="list-group-item"><a href="">Git/githud</a></li>
+                        <li class="list-group-item"><a href="">Photoshop</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- course -->
+            <main class="course col-span-8">
+                <div class="course-menu">
+                    <ul class="course-menu__list">
+                        
+                        <div class="d-flex justify-content-start py-3 mt-4">
+                            <li class="active-item"><a class="btn btn-active border-right-none" href="">Hot</a></li>
+                            <li><a class="btn btn-hover" href="">Mới nhất</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+                <!-- course card -->
+                <div class="grid grid-cols-3 gap-4 mt-6">
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/html_css.jpg" class="card-img-top border" alt="...">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">HTML/CSS từ cơ bản đến nâng cao</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Trần Ngọc Minh</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/js.png" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Javascript Hero to Master</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Nguyễn Trần Trung Hiếu</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/react.png" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Reactjs cơ bản</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Trần Thanh Tùng</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/angular.png" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Angular 8 Cơ Bản</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Nguyễn hoàng khắc hiếu</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/vuejs.jpeg" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Vuejs Nâng Cao</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Lê Hồng Chí Thanh</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/js.png" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Javascript ES6</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Trần Ngọc Minh</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">Miễn phí</span>
+                                    </li>    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card border">
+                        <a href="#" class="card-img">
+                            <img src="./assets/img/vuejs.jpeg" class="card-img-top border" alt="..." width="100%">
+                        </a>
+                        <div class="card-content">
+                            <h6 class="heading">
+                                <a href="">Card title</a>
+                            </h6>
+                            <p class="desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="card-info">
+                            <li class="author">
+                                <a href="" class="author-link">
+                                    <span class="name pl-1">Trần Thị Thanh Bình</span>
+                                </a>
+                            </li>
+
+                            <li class="rating">
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="star-gold fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">(100)</span>
+                            </li>
+                            
+                            <li>
+                                <ul class="d-flex justify-content-between align-item-center mt-2">
+                                    <li class="registed">
+                                        <i class="fas fa-users"></i>
+                                        <span>100</span>
+                                    </li>
+                                    <li class="price">
+                                        <span class="btn bg-blue">200.000</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-light py-8 mt-12">
+        <div class="container">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="footer-logo">
+                    <!-- logo -->
+                    <div class="py-4 my-2" height="200px">
+                        <div class="logo">
+                            <img width="100%" height="100%" src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
+                            <p class="logo-text"><span>s</span>Now</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p>sNow là nơi học lập trình miễn phí.</p>
+                    </a>
+                    <p class="py-2">Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.</p>
+                    <p>Học viên có thể học từ con số 0 tới khi trở thành lập trình viên chuyên nghiệp tại đây.</p>
+                </div>
+
+                <div>
+                    <h6 class="heading py-4 my-2">sNow</h6>
+                    <ul>
+                        <li><a href="">Giới thiệu về sNow</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li><a href="">Điều khoản dịch vụ</a></li>
+                        <li><a href="">Hướng dẫn thanh toán</a></li>
+                        <li><a href="">Kích hoạt khóa học</a></li>
+                        <li><a href="">Góc chia sẻ</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="heading py-4 my-2">Hợp Tác Liên Kết</h6>
+                    <ul>
+                        <li><a href="">Đăng ký giảng viên</a></li>
+                        <li><a href="">Giải pháp e-learning</a></li>
+                        <li><a href="">Đào tạo doanh nghiệp</a></li>
+                        <li><a href="">Tuyển dụng nhân tài</a></li>
+                        <li><a href="">Thẻ học online</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h6 class="heading py-4 my-2">Theo dõi chúng tôi</h6>
+                    <p>Nhập email để đăng ký nhận những thông tin hữu ích về học tập từ sNow</p>
+                    <input type="text" class="border-none py-2 px-2 border-radius my-3" placeholder="Email của bạn..." value="">
+                    <button class="btn bg-primary border-none btn-hover">Đăng Ký</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.course-list-icon {
+    a {
+        height: 34px;
+        width: 34px;
+        @include flex-center;
+        font-size: 1.5rem;
+        margin-left: 4px;
+    }
+}

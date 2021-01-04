@@ -1,0 +1,40 @@
+.btn {
+    padding: 8px 16px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.4rem;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    transition: ease-in-out all 0.4s;
+    
+
+    &-primary {
+        color: $text-color;
+        background-color: $primary-color;
+    }
+    &-hover {
+        &:hover {
+            background-color: rgba($color: #1c1b1d, $alpha: 0.9);
+            color: rgba($color: white, $alpha: 0.9) !important;
+        }
+    }
+
+    &-active {
+        background-color: rgba($color: #1c1b1d, $alpha: 0.8);
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+
+
+    &-white {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    &-circle {
+        border-radius: 50%;
+    }
+    
+}

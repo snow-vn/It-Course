@@ -1,0 +1,22 @@
+.footer {
+    ul li {
+        padding: 4px 0;
+        margin: 4px 0;
+        a {
+            color: rgba(255,255,255,.7);
+            font-size: 1.4rem;
+        }
+    }
+
+    p {
+        color: rgba(255,255,255,.7);
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    &-logo {
+        .logo {
+            @include flex-start;
+        }
+    }
+}
