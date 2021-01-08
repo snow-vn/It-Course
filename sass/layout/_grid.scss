@@ -39,7 +39,7 @@ $w-pc: 984px;
         }
     }
 
-    
+//     tablet
     @media screen and (min-width: 740px) {
         &.gap-md {
             @for $w-gap from 0 through 4  {
@@ -68,7 +68,7 @@ $w-pc: 984px;
             }
         }           
     }
-
+// pc low ->
     @media screen and (min-width: 1113px){
         &.grid-cols-lg {
             @for $w-cols from 0 through 12  {
@@ -97,7 +97,7 @@ $w-pc: 984px;
           width: $w-tablet; 
         } 
     }
-// <pc
+// <pc hight (wide)
     @media (min-width: 1024px) and (max-width: 1239px) {
         &.wide {
             width: $w-pc;
