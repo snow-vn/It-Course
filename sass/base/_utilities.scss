@@ -10,6 +10,10 @@
     color: $primary-color !important;
 }
 
+.text-center {
+    text-align: center;
+}
+
 
 // background 
 .bg-primary {
@@ -22,6 +26,10 @@
 
 .bg-dark {
     background-color: $black-color;
+}
+
+.bg-none {
+    background-color: transparent !important;
 }
 
 // Font size 
@@ -188,3 +196,18 @@
     width: 100% !important;
 }
 
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.p-relative {
+    position: relative;
+}
+
+#user {
+    z-index: 123123123;
+}

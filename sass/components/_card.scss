@@ -57,12 +57,18 @@
                 padding-bottom: 8px;    
                 transition: ease-in 0.3s all;
                 display: block;
+                max-height: 48px;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
         .desc {
             font-size: 1.4rem;
             line-height: 1.8rem;
+            max-height: 56px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 

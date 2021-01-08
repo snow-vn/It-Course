@@ -31,7 +31,10 @@
 }
 
 
-@mixin  form-group {
+@mixin form-group {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
     width: 100%;
 }
 

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-      <div class="container">
+      <div class="grid wide">
         <nav class="main-nav">
             <!-- logo -->
             <div class="logo">
@@ -64,7 +64,7 @@
                     </li>
 
                     <!-- icon user -->
-                    <li class="main_nav__item">
+                    <li class="main_nav__item" id="user">
                         <a href="#" class="main-nav__link btn-hover">
                             <i class="fas fa-user-plus"></i>
                         </a>
@@ -75,9 +75,11 @@
 
             <!-- nav input search -->
             <form class="form-search">
+                <div class="overlay bg-none">
+                </div>
                 <div class="form-group">
                     <input type="text" placeholder="Tìm kiếm khóa học" class="form-control">
-                    <span class="btn bg-dark-none border-left btn-active"><i class="fas fa-search"></i></span>
+                    <span class="btn-active px-3"><i class="fas fa-search"></i></span>
                 </div>
                 <button id="cancel-search" class="btn btn-white ml-1">Hủy</button>
             </form>
@@ -85,10 +87,41 @@
       </div>
     </header>
 
-    <div class="container mt-6">
-        <div class="grid grid-cols-12 gap-2 lg-gap-12 md-gap-8">
-            <!-- sidebar -->
-            <section class="sidebar col-span-0 lg-col-span-4 md-col-span-4">
+    <!-- Form main -->
+    <div class="grid wide p-relative d-none author-box">
+        <div class="overlay">
+        </div>
+        <div class="register">
+            <form action="" class="form">
+                <h2 class="heading fz-7 text-light py-4 text-center">Đăng Ký</h2>
+                <span class="icon-close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <div class="form-group">
+                    <label for="" class="form-label">Tên đầy đủ:</label>
+                    <input type="text" class="form-control" placeholder="Ex: Ngọc Minh">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Email:</label>
+                    <input type="text" class="form-control" placeholder="Ex: mysnow.vn@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Mật khẩu:</label>
+                    <input type="text" class="form-control" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Nhập lại mật khẩu: </label>
+                    <input type="text" class="form-control" placeholder="Nhập lại mật khẩu ">
+                </div>
+                <div class="form-submit mt-8">
+                    <input type="submit" class="form-control btn btn-active btn-hover border-none" value="Đăng ký">
+                </div>
+            </form>
+        </div>
+    </div> 
+    <section class="main mt-6">
+        <div class="grid wide grid-cols-12 gap-2 gap-lg-4 gap-md-4">
+            <section class="sidebar col-none col-span-lg-3 col-span-md-4">
                 <div class="course-sidebar active">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">Font-End</h6>
@@ -102,7 +135,7 @@
                         <li class="list-group-item"><a href="">Angular</a></li>
                     </ul>
                 </div>
-
+  
                 <div class="course-sidebar">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">Back-End</h6>
@@ -116,7 +149,7 @@
                         <li class="list-group-item"><a href="">Golang</a></li>
                     </ul>
                 </div>
-
+  
                 <div class="course-sidebar">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">App/Mobile</h6>
@@ -129,7 +162,7 @@
                         <li class="list-group-item"><a href="">Kotlin</a></li>
                     </ul>
                 </div>
-
+  
                 <div class="course-sidebar">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">Cơ sở dữ liệu</h6>
@@ -142,7 +175,7 @@
                         <li class="list-group-item"><a href="">Postgresql</a></li>
                     </ul>
                 </div>
-
+  
                 <div class="course-sidebar">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">DevOps</h6>
@@ -152,7 +185,7 @@
                         <li class="list-group-item"><a href=""></a></li>
                     </ul>
                 </div>
-
+  
                 <div class="course-sidebar">
                     <div class="course-sidebar__heading border-bottom">
                         <h6 class="heading mt-3 py-3">Bổ trợ</h6>
@@ -164,8 +197,7 @@
                     </ul>
                 </div>
             </section>
-            <!-- course -->
-            <main class="course col-span-12 lg-col-span-8 md-col-span-8">
+            <main class="course col-span-12 col-span-lg-9 col-span-md-8">
                 <div class="course-menu">
                     <ul class="course-menu__list">
                         
@@ -173,11 +205,11 @@
                             <li class="active-item"><a class="btn btn-active border-right-none" href="">Hot</a></li>
                             <li><a class="btn btn-hover" href="">Mới nhất</a></li>
                         </div>
-
+  
                     </ul>
                 </div>
                 <!-- course card -->
-                <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-4 mt-6">
+                <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-4 mt-2">
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/html_css.jpg" class="card-img-top border" alt="...">
@@ -194,7 +226,7 @@
                                     <span class="name pl-1">Trần Ngọc Minh</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -203,7 +235,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -218,7 +250,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/js.png" class="card-img-top border" alt="..." width="100%">
@@ -235,7 +267,7 @@
                                     <span class="name pl-1">Nguyễn Trần Trung Hiếu</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -244,7 +276,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -259,7 +291,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/react.png" class="card-img-top border" alt="..." width="100%">
@@ -276,7 +308,7 @@
                                     <span class="name pl-1">Trần Thanh Tùng</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -285,7 +317,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -300,7 +332,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/angular.png" class="card-img-top border" alt="..." width="100%">
@@ -317,7 +349,7 @@
                                     <span class="name pl-1">Nguyễn hoàng khắc hiếu</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -326,7 +358,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -341,7 +373,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/vuejs.jpeg" class="card-img-top border" alt="..." width="100%">
@@ -358,7 +390,7 @@
                                     <span class="name pl-1">Lê Hồng Chí Thanh</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -367,7 +399,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -381,7 +413,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/js.png" class="card-img-top border" alt="..." width="100%">
@@ -398,7 +430,7 @@
                                     <span class="name pl-1">Trần Ngọc Minh</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -407,7 +439,7 @@
                                 <i class="fas fa-star"></i>
                                 <span class="ml-2">(100)</span>
                             </li>
-
+  
                             <li>
                                 <ul class="d-flex justify-content-between align-item-center mt-2">
                                     <li class="registed">
@@ -421,7 +453,7 @@
                             </li>
                         </ul>
                     </div>
-
+  
                     <div class="card border">
                         <a href="#" class="card-img">
                             <img src="./assets/img/vuejs.jpeg" class="card-img-top border" alt="..." width="100%">
@@ -438,7 +470,7 @@
                                     <span class="name pl-1">Trần Thị Thanh Bình</span>
                                 </a>
                             </li>
-
+  
                             <li class="rating">
                                 <i class="star-gold fas fa-star"></i>
                                 <i class="star-gold fas fa-star"></i>
@@ -464,59 +496,58 @@
                 </div>
             </main>
         </div>
-    </div>
+    </section>
+
 
     <footer class="footer bg-dark text-light py-8 mt-12">
-        <div class="container">
-            <div class="grid grid-cols-2 lg-grid-cols-4 gap-4">
-                <div class="footer-logo">
-                    <!-- logo -->
-                    <div class="py-4 my-2" height="200px">
-                        <div class="logo">
-                            <img width="100%" height="100%" src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
-                            <p class="logo-text"><span>s</span>Now</p>
-                        </div>
+        <div class="grid wide grid-cols-2 grid-cols-lg-4 gap-4">
+            <div class="footer-logo">
+                <!-- logo -->
+                <div class="py-4 my-2" height="200px">
+                    <div class="logo">
+                        <img width="100%" height="100%" src="./assets/img/snow-flake.svg" class="logo-img" alt="sNow">
+                        <p class="logo-text"><span>s</span>Now</p>
                     </div>
-                    <a href="">
-                        <p>sNow là nơi học lập trình miễn phí.</p>
-                    </a>
-                    <p class="py-2">Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.</p>
-                    <p>Học viên có thể học từ con số 0 tới khi trở thành lập trình viên chuyên nghiệp tại đây.</p>
                 </div>
-
-                <div>
-                    <h6 class="heading py-4 my-2">sNow</h6>
-                    <ul>
-                        <li><a href="">Giới thiệu về sNow</a></li>
-                        <li><a href="">Câu hỏi thường gặp</a></li>
-                        <li><a href="">Điều khoản dịch vụ</a></li>
-                        <li><a href="">Hướng dẫn thanh toán</a></li>
-                        <li><a href="">Kích hoạt khóa học</a></li>
-                        <li><a href="">Góc chia sẻ</a></li>
-                        <li><a href="">Chính sách bảo mật</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h6 class="heading py-4 my-2">Hợp Tác Liên Kết</h6>
-                    <ul>
-                        <li><a href="">Đăng ký giảng viên</a></li>
-                        <li><a href="">Giải pháp e-learning</a></li>
-                        <li><a href="">Đào tạo doanh nghiệp</a></li>
-                        <li><a href="">Tuyển dụng nhân tài</a></li>
-                        <li><a href="">Thẻ học online</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h6 class="heading py-4 my-2">Theo dõi chúng tôi</h6>
-                    <p>Nhập email để đăng ký nhận những thông tin hữu ích về học tập từ sNow</p>
-                    <input type="text" class="border-none py-2 px-2 border-radius my-3" placeholder="Email của bạn..." value="">
-                    <button class="btn bg-primary border-none btn-hover">Đăng Ký</button>
-                </div>
+                <a href="">
+                    <p>sNow là nơi học lập trình miễn phí.</p>
+                </a>
+                <p class="py-2">Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.</p>
+                <p>Học viên có thể học từ con số 0 tới khi trở thành lập trình viên chuyên nghiệp tại đây.</p>
+            </div>
+    
+            <div>
+                <h6 class="heading py-4 my-2">sNow</h6>
+                <ul>
+                    <li><a href="">Giới thiệu về sNow</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Điều khoản dịch vụ</a></li>
+                    <li><a href="">Hướng dẫn thanh toán</a></li>
+                    <li><a href="">Kích hoạt khóa học</a></li>
+                    <li><a href="">Góc chia sẻ</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h6 class="heading py-4 my-2">Hợp Tác Liên Kết</h6>
+                <ul>
+                    <li><a href="">Đăng ký giảng viên</a></li>
+                    <li><a href="">Giải pháp e-learning</a></li>
+                    <li><a href="">Đào tạo doanh nghiệp</a></li>
+                    <li><a href="">Tuyển dụng nhân tài</a></li>
+                    <li><a href="">Thẻ học online</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h6 class="heading py-4 my-2">Theo dõi chúng tôi</h6>
+                <p>Nhập email để đăng ký nhận những thông tin hữu ích về học tập từ sNow</p>
+                <input type="text" class="border-none py-2 px-2 border-radius my-3" placeholder="Email của bạn..." value="">
+                <button class="btn bg-primary border-none btn-hover">Đăng Ký</button>
             </div>
         </div>
-    </footer>
+        </footer>
 
     
     <script src="main.js"></script>

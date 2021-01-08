@@ -4,6 +4,7 @@ var mainMenu = document.querySelector('.main-nav__center');
 var rightMenu = document.querySelector('.right-menu');
 var searchIcon = document.querySelector('#search-icon');
 var cancelSearch = document.querySelector('#cancel-search');
+
 searchIcon.addEventListener('click', () =>{
     openSearch();
 })
@@ -11,6 +12,8 @@ searchIcon.addEventListener('click', () =>{
 cancelSearch.addEventListener('click', () => {
     closeSearch();
 });
+
+
 openSearch = () => {
     rightMenu.style.display = 'none';
     mainMenu.style.display = 'none';
@@ -50,3 +53,19 @@ Array.from(elCourseSb).forEach((el) => {
         })
     })
 })
+// show and hide form register
+var overlays = document.querySelectorAll('.overlay')
+var authorBox = document.querySelector('.author-box')
+var user = document.getElementById('user')
+var iconClose = document.querySelector('.icon-close')
+user.addEventListener('click', () => {
+    authorBox.classList.toggle('d-none')
+})
+
+Array.from(overlays).forEach((overlay) => {
+    overlay.addEventListener('click', () => {
+        closeSearch()
+        authorBox.classList.add('d-none')
+    })
+})
+iconClose.addEventListener('click', () => authorBox.classList.add('d-none'))
