@@ -1,0 +1,27 @@
+.footer {
+    ul li {
+        padding: 4px 0;
+        margin: 4px 0;
+        a {
+            color: rgba(255,255,255,.7);
+            font-size: 1.4rem;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: rgba($color: $primary-color, $alpha: 0.8);
+            }
+        }
+    }
+
+    p {
+        color: rgba(255,255,255,.7);
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    &-logo {
+        .logo {
+            @include flex-start;
+        }
+    }
+}

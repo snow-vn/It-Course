@@ -1,0 +1,213 @@
+.active {
+    color: $primary-color !important;
+}
+
+// color 
+.text-light {
+    color: $white-color !important;
+}
+.text-primary {
+    color: $primary-color !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+// background 
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-dark {
+    background-color: $black-color;
+}
+
+.bg-none {
+    background-color: transparent !important;
+}
+
+// Font size 
+@for $fz from 0 to 12 {
+    .fz-#{$fz} {
+        font-size: $fz * 0.4rem;
+    }
+}
+
+
+.border-radius {
+    border-radius: 4px;
+}
+
+// border
+.border {
+    border: 1px solid $border-color;
+
+    &-none {
+        border: 0 !important; 
+    }
+
+    &-bottom {
+        border-bottom: 1px solid $border-color !important;
+
+        &-none {
+            border-bottom-width: 0 !important;
+        }
+    }
+    &-top {
+        border-top: 1px solid $border-color !important;
+        
+        &-none {
+            border-top-width: 0 !important;
+        }
+    }
+
+    &-left {
+        border-left: 1px solid $border-color !important;
+
+        &-none {
+            border-left-width: 0 !important;
+        }
+    }
+
+    &-right {
+        border-right: 1px solid $border-color !important;
+
+        &-none {
+            border-right-width: 0 !important;
+        }
+    }
+}
+
+
+
+// -------- Margin -----------------
+.m {
+    &g-0 {
+        margin: 0 !important;
+    }
+    @for $number__mg from 0 through 12 {
+        // mx-
+        &x-#{$number__mg} {
+            margin-left: $number__mg*0.4rem !important;
+            margin-right: $number__mg*0.4rem !important;
+        }    
+
+        // my-
+        &y-#{$number__mg} {
+            margin-top: $number__mg*0.4rem !important;
+            margin-bottom: $number__mg*0.4rem !important;
+        }
+
+        // mt-
+        &t-#{$number__mg} {
+            margin-top: $number__mg*0.4rem !important;
+        }
+
+        // mr-
+        &r-#{$number__mg} {
+            margin-right: $number__mg*0.4rem !important;
+        }
+
+        // ml-
+        &b-#{$number__mg} {
+            margin-bottom: $number__mg*0.4rem !important;
+        }
+
+        &l-#{$number__mg} {
+            margin-left: $number__mg*0.4rem !important;
+        }
+    }
+}
+
+
+// --------- padding -----------
+.p{
+    &d-0 {
+        padding: 0 !important;
+    }
+    @for $number__pd from 0 to 12 {
+        // px-
+        &x-#{$number__pd} {
+            padding-left: $number__pd*0.4rem !important;
+            padding-right: $number__pd*0.4rem !important;
+        }    
+
+        // py-
+        &y-#{$number__pd} {
+            padding-top: $number__pd*0.4rem !important;
+            padding-bottom: $number__pd*0.4rem !important;
+        }
+
+        // pt-
+        &t-#{$number__pd} {
+            padding-top: $number__pd*0.4rem !important;
+        }
+
+        // pr-
+        &r-#{$number__pd} {
+            padding-right: $number__pd*0.4rem !important;
+        }
+
+        // pb-
+        &b-#{$number__pd} {
+            padding-bottom: $number__pd*0.4rem !important;
+        }
+
+        // pl-
+        &l-#{$number__pd} {
+            padding-left: $number__pd*0.4rem !important;
+        }
+    }
+}
+
+
+// flex
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content {
+    &-between {
+        justify-content: space-between !important;
+    }
+
+    &-center {
+        justify-content: center !important;
+    }
+
+    &-end {
+        justify-content: flex-end;
+    }
+}
+
+
+.align-items-center {
+    align-items: center !important;
+}
+    
+
+.w-100 {
+    width: 100% !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.p-relative {
+    position: relative;
+}
+
+#user {
+    z-index: 123123123;
+}

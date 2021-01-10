@@ -1,0 +1,24 @@
+.heading{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+
+.list-group {
+    padding: 24px;
+    border-radius: 2px;
+    border: $border-color 1px solid;
+
+    &-item {    
+        @extend .list-group;
+        padding: 8px 16px;
+        border-bottom: 0px;
+
+        &:last-child {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}

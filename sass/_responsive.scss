@@ -1,0 +1,21 @@
+// tablet and mobile
+@media (max-width: 1024px) {
+   // hide on mobile and tablet
+   .hide-on-mb-tl {
+      display: none !important;
+   }
+}
+// tablet
+@media (min-width: 641px) and (max-width: 1024px) {
+   // hide on tablet 
+   .hide-on-tl {
+      display: none !important; 
+   }
+}
+// mobile
+@media (min-width: 640px) {
+   // hide on mobile
+   .hide-on-mb {
+      display: none !important;
+   }
+}

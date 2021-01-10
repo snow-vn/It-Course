@@ -1,0 +1,67 @@
+.course-sidebar{
+
+    &__heading {
+        @include flex-between;
+        padding-right: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    
+        .heading {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        &:hover {
+            .heading, i {
+                color: $primary-color;
+            };
+        }
+
+        i {
+            font-size: 1rem;
+            padding-top: 10px;
+        }
+        &.active:hover {
+            .heading, i {
+                color: $text-color;
+            };
+        }
+
+    }
+
+
+    // hide group list course
+    .list-group {
+        display: none;
+        
+        &-item {
+            border-color: rgba($color: $border-color, $alpha: 0.6);
+            padding: 12px 25px;
+            cursor: pointer;
+            color: rgba(0,0,0,.7);
+            transition: all .3s ease-in-out;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:hover a{
+                padding-left: 12px;
+                color: $primary-color,;
+            }
+
+            &.active a{
+                color: $primary-color,;
+            }
+    
+            a {
+                font-size: 1.4rem;
+                transition: 0.4s;
+            }
+        }
+    }   
+
+    &.active .list-group {
+        display: block;
+    }
+}
