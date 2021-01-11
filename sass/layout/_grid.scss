@@ -48,19 +48,23 @@ $w-pc: 984px;
             }
         }
     }
-
-
-
     &.gap {
         @for $w-gap from 0 through 4  {
             &-#{$w-gap} {
                 gap: $w-gap * 0.4rem;
             }
+
+            &-x-#{$w-gap} {
+                column-gap: $w-gap * 0.4rem;
+            }
         }
     }
 
+
+
 //     tablet
     @media screen and (min-width: 740px) {
+
         &.gap-md {
             @for $w-gap from 0 through 4  {
                 &-#{$w-gap} {
@@ -108,6 +112,7 @@ $w-pc: 984px;
 
 
     }
+
 // pc low ->
     @media screen and (min-width: 1113px){
         &.grid-cols-lg {

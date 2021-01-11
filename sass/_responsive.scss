@@ -13,9 +13,12 @@
    }
 }
 // mobile
-@media (min-width: 640px) {
+@media (max-width: 640px) {
    // hide on mobile
    .hide-on-mb {
       display: none !important;
+   }
+   .text-center-sm {
+      text-align: center !important;
    }
 }

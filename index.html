@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header px-8 px-md-0 px-lg-0">
       <div class="grid wide">
         <nav class="main-nav">
             <!-- logo -->
@@ -42,7 +42,7 @@
             <div class="right-menu">
                 <ul class="main-nav__list">
 
-                    <li class="main_nav__item">
+                    <li class="main_nav__item hide-on-mb-tl">
                         <a href="#" class="main-nav__link">
                             Tất cả sNow
                             <i class="fas fa-angle-down"></i>
@@ -88,93 +88,97 @@
     </header>
 
     <!-- Form main -->
-    <div class="grid wide grid-cols-1 px-2 grid-cols-md-5 grid-cols-lg-3 author-box d-none">
-        <div class="overlay">
-        </div>
-        <div class="col-start-lg-3 col-end-lg-4 col-start-md-3 col-end-md-6">
-
-            <!-- form login -->
-            <form action="" class="form form-login">
-                <h2 class="heading fz-7 text-light py-4">Đăng Nhập</h2>
-                <span class="icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-                <div class="form-group">
-                    <label class="form-label" for="">Email: </label>
-                    <input type="text" class="form-control" placeholder="Ex: mysnow.vn@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="" class="form-label">Mật khẩu:</label>
-                    <input type="text" class="form-control" placeholder="Nhập mật khẩu">
-                </div>
-
-                <div class="form-submit mt-8">
-                    <input type="submit" class="form-control btn btn-active btn-hover border-none" value="Đăng Nhập">
-                    <span class="text-center d-block py-2 text-light">or</span>
-                    <input type="submit" id="signUp" class="form-control btn bg-dark text-light btn-hover border-none" value="Đăng Ký">
-                </div>
-            </form>
-
-            <!-- form register -->
-            <form action="" class="form d-none form-register">
-                <h2 class="heading fz-7 text-light py-4">Đăng Ký</h2>
-                <span class="desc fz-3">Nhanh chóng và dễ dàng</span>
-                <span class="icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-                <div class="form-group">
-                    <label for="" class="form-label">Tên đầy đủ:</label>
-                    <input type="text" class="form-control" placeholder="Ex: Ngọc Minh">
-                </div>
-                <div class="form-group">
-                    <label for="" class="form-label">Email:</label>
-                    <input type="text" class="form-control" placeholder="Ex: mysnow.vn@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="" class="form-label">Mật khẩu:</label>
-                    <input type="text" class="form-control" placeholder="Nhập mật khẩu">
-                </div>
-                <div class="form-group">
-                    <label for="" class="form-label">Nhập lại mật khẩu: </label>
-                    <input type="text" class="form-control" placeholder="Nhập lại mật khẩu ">
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="form-label">Địa chỉ: </label>
-                    <select name="" id="" class="form-control">
-                        <option value="DN">-- Chọn địa chỉ --</option>
-                        <option value="DN">Đà Nẵng</option>
-                        <option value="HP">Hải Phòng</option>
-                        <option value="HN">Hà Nội</option>
-                        <option value="HCM">TP HCM</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="form-label">Giới tính: </label>
-                    <div class="d-flex fz-4 text-light">
-                        <label class="d-flex justify-content-between form-control mr-2">
-                            <label for="male">Nam</label>
-                            <input type="radio" name="gender" id="male">
-                        </label> 
-                        <label class="d-flex justify-content-between form-control ml-2">
-                            <label for="female">Nữ</label>
-                            <input type="radio" name="gender" id="female">
-                        </label>
+    <div class="px-4">
+        <div class="grid wide grid-cols-1 px-2 grid-cols-md-5 grid-cols-lg-3 author-box d-none p-relative">
+            <div class="overlay">
+            </div>
+            <div class="col-start-lg-3 col-end-lg-4 col-start-md-3 col-end-md-6 p-absolute">
+                <!-- form login -->
+                <form action="" class="form form-login">
+                    <h2 class="heading fz-7 text-light py-4">Đăng Nhập</h2>
+                    <span class="icon-close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <div class="form-group">
+                        <label class="form-label" for="">Email: </label>
+                        <input type="text" class="form-control" placeholder="Ex: mysnow.vn@gmail.com">
                     </div>
-                   
-                </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Mật khẩu:</label>
+                        <input type="text" class="form-control" placeholder="Nhập mật khẩu">
+                    </div>
+    
+                    <div class="form-submit mt-8">
+                        <input type="submit" class="form-control btn btn-active btn-hover border-none" value="Đăng Nhập">
+                        <span class="text-center d-block py-2 text-light">or</span>
+                        <input type="submit" id="signUp" class="form-control btn bg-dark text-light btn-hover border-none" value="Đăng Ký">
+                    </div>
+                </form>
+    
+                <!-- form register -->
+                <form action="" class="form d-none form-register">
+                    <h2 class="heading fz-7 text-light py-4">Đăng Ký</h2>
+                    <span class="desc fz-3">Nhanh chóng và dễ dàng</span>
+                    <span class="icon-close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <div class="form-group">
+                        <label for="" class="form-label">Tên đầy đủ:</label>
+                        <input type="text" class="form-control" placeholder="Ex: Ngọc Minh">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Email:</label>
+                        <input type="text" class="form-control" placeholder="Ex: mysnow.vn@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Mật khẩu:</label>
+                        <input type="text" class="form-control" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Nhập lại mật khẩu: </label>
+                        <input type="text" class="form-control" placeholder="Nhập lại mật khẩu ">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="" class="form-label">Địa chỉ: </label>
+                        <select name="" id="" class="form-control">
+                            <option value="DN">-- Chọn địa chỉ --</option>
+                            <option value="DN">Đà Nẵng</option>
+                            <option value="HP">Hải Phòng</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">TP HCM</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="" class="form-label">Giới tính: </label>
+                        <div class="d-flex fz-4 text-light">
+                            <label class="d-flex justify-content-between form-control mr-2">
+                                <label for="male">Nam</label>
+                                <input type="radio" name="gender" id="male">
+                            </label> 
+                            <label class="d-flex justify-content-between form-control ml-2">
+                                <label for="female">Nữ</label>
+                                <input type="radio" name="gender" id="female">
+                            </label>
+                        </div>
+                       
+                    </div>
+    
+                    <div class="form-submit mt-8">
+                        <input type="submit" class="form-control btn btn-active btn-hover border-none" value="Đăng ký">
+                        <span class="text-light text-center py-2 d-block">or</span>
+                        <input id="signIn" type="submit" class="form-control btn bg-dark text-light btn-hover border-none" value="Đăng Nhập">
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
 
-                <div class="form-submit mt-8">
-                    <input type="submit" class="form-control btn btn-active btn-hover border-none" value="Đăng ký">
-                    <span class="text-light text-center py-2 d-block">or</span>
-                    <input id="signIn" type="submit" class="form-control btn bg-dark text-light btn-hover border-none" value="Đăng Nhập">
-                </div>
-            </form>
-        </div>
-    </div> 
-    <section class="main mt-6">
+    <!-- sidebar and main -->
+    <section class="main mt-6 px-8 px-md-0 px-lg-0">
         <div class="grid wide grid-cols-12 gap-2 gap-lg-4 gap-md-4">
+
             <section class="sidebar col-none col-span-lg-3 col-span-md-4">
                 <div class="course-sidebar active">
                     <div class="course-sidebar__heading border-bottom">
@@ -251,7 +255,7 @@
                     </ul>
                 </div>
             </section>
-            <main class="course col-span-12 col-span-lg-9 col-span-md-8">
+            <main class="course col-span-12 col-span-lg-9 col-span-md-8 ml-lg-6 ml-md-4">
                 <div class="course-menu">
                     <ul class="course-menu__list">
                         
@@ -551,8 +555,10 @@
             </main>
         </div>
     </section>
-    <footer class="footer bg-dark text-light py-8 mt-12">
-        <div class="grid wide grid-cols-2 grid-cols-lg-4 gap-4">
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-light py-lg-8 mt-lg-12 mt-md-6 py-md-4 px-8 px-md-0 px-lg-0 mt-4 text-center-sm">
+        <div class="grid wide grid-cols-1 grid-cols-md-2 grid-cols-lg-4 gap-x-4">
             <div class="footer-logo">
                 <!-- logo -->
                 <div class="py-4 my-2" height="200px">
@@ -569,7 +575,7 @@
             </div>
     
             <div>
-                <h6 class="heading py-4 my-2">sNow</h6>
+                <h6 class="heading mt-md-0 py-md-4 my-md-2 py-1 mt-4">sNow</h6>
                 <ul>
                     <li><a href="">Giới thiệu về sNow</a></li>
                     <li><a href="">Câu hỏi thường gặp</a></li>
@@ -599,7 +605,7 @@
                 <button class="btn bg-primary border-none btn-hover">Đăng Ký</button>
             </div>
         </div>
-        </footer>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
